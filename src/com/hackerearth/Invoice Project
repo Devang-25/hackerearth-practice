@@ -1,0 +1,70 @@
+Expedia Group Developer Hiring Challenge
+Duration : 4 Hours
+
+Invoice
+	Your task is to create a full stack web application for Invoice generation which displays the details of a receipt containing items purchased by a customer.
+	Taxes are calculated with a rate of 20%, medical products are exempt, i.e. 0%.
+
+
+What you need to provide
+	We expect you to provide a working robust solution to the problem.
+	Concentrate your efforts on:
+		Design
+		Simplicity
+		Testability/Test coverage
+		Extensibility
+
+
+[Minimum Requirement]
+	— On the homepage your form should capture following details:
+	[name, quantity, category(Medical or not), price, taxRate]
+	— Success page which displays the details of an Invoice in a visually attractive manner.
+	— Write a functional backend and frontend in tech stack mentioned below.
+	— The data sharing between backend and frontend must be in JSON via REST APIs.
+	— Visually interactive responsive UI and UX design.
+	— Perform thorough testing and submit the testing report along with everything.
+	— Submit Screenshots, Source code & Deployment Instructions.
+
+
+[Plus Point]
+	— Provide Autocomplete feature for products which already exist in the database.
+	— Save all the receipts in a database.
+	— Visually interactive responsive UI design.
+	— Submit Screenshots, Source code & Deployment Instructions.
+
+ 
+[Advanced]
+	— TaxRate, Price and Category should get populated directly for known products, although do make them editable.
+	— Provide functionality to edit already generated Invoices.
+	— Write clear, concise and well tested code. Provide an excel sheet of your extensive test coverage.
+	— Custom design, font and icons to make web app more user ­friendly.
+	— You may add portfolio activity comprising awesome work you have done in Tech stack mentioned below.
+	— Use your imagination and add features which would make things easier for end users.
+	— We expect production level, generic, robust and standalone code.
+	— Zip all your source code, executables, screenshots and upload.
+	— Beautify; Comment; Documented code; handle Input Exceptions, Unicode and Null values.
+
+
+[Quality Expectation]
+	— Your classes should follow proper naming conventions and should have a singular responsibility.
+	— Your classes should contain readable, immutable and testable code.
+	— Your test coverage should include all the negative and positive exception cases.
+	— Your web app should provide extensibility. As in it should be convenient to edit Tax rate and Product category of an already generated Invoice.
+
+ 
+[Ideal Stack]
+	-- Java EE, Vanilla Javascript, HTML, CSS
+	-- MySQL or any other DB.
+
+
+[Evaluation Criteria]
+	The solution should cater to following points
+		Class Design
+			Should be modular, readable and simple
+			Proper java naming conventions followed
+		Test cases
+			Should have test coverage
+			Should cover the scenarios
+		Extensibility
+			Ease of adding new scenarios
+			Ease of integrating with input source
