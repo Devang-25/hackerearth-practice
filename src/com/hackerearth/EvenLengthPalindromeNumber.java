@@ -1,5 +1,12 @@
 package com.hackerearth;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+/*
+ * https://www.hackerearth.com/practice/basic-programming/implementation/basics-of-implementation/practice-problems/algorithm/pepper-and-palindromic-love-76ae8763/
+ * */
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -7,7 +14,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Scanner;
 import java.util.Set;
 
 class EvenLengthPalindromeNumber {
@@ -16,13 +22,10 @@ class EvenLengthPalindromeNumber {
 		// long startTime = System.currentTimeMillis();
 		long startTime = System.nanoTime();
 		List<Long> inputList = new ArrayList<Long>();
-		Scanner sc = new Scanner(System.in);
-		// System.out.println("First line contains T, number of test cases : ");
-		int T = sc.nextInt();
-		// System.out.println("Each of the next T lines contains an integer N : ");
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int T = Integer.parseInt(br.readLine());
 		for (int i = 0; i < T; i++) {
-			// System.out.println("Enter value : ");
-			long val = sc.nextLong();
+			long val = Long.parseLong(br.readLine());
 			inputList.add(val);
 		}
 
@@ -35,8 +38,7 @@ class EvenLengthPalindromeNumber {
 		// long stopTime = System.currentTimeMillis();
 		long stopTime = System.nanoTime();
 		long elapsedTime = stopTime - startTime;
-		System.out.println(elapsedTime + " nano seconds");
-		sc.close();
+		// System.out.println(elapsedTime + " nano seconds");
 	}
 
 	public static long getMaxOfX(final long val) {
