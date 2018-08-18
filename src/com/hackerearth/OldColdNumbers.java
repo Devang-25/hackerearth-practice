@@ -1,15 +1,10 @@
 package com.hackerearth;
 
-/* IMPORTANT: Multiple classes and nested static classes are supported */
-
 /*
- * uncomment this if you want to read input.
-//imports for BufferedReader
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-*/
-//import for Scanner and other utility classes
-import java.util.*;
+ * https://www.hackerearth.com/practice/basic-programming/implementation/basics-of-implementation/practice-problems/algorithm/old-and-cold-numbers-d9326e6b/
+ * */
+
+import java.util.Scanner;
 
 // Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
 
@@ -19,32 +14,21 @@ class OldColdNumbers {
 
 	public static void main(String args[]) throws Exception {
 		long startTime = System.nanoTime();
-		/*
-		 * Sample code to perform I/O: Use either of these methods for input
-		 * 
-		 * //BufferedReader BufferedReader br = new BufferedReader(new
-		 * InputStreamReader(System.in)); String name = br.readLine(); // Reading input
-		 * from STDIN System.out.println("Hi, " + name + "."); // Writing output to
-		 * STDOUT
-		 * 
-		 */
-
-		// Scanner
 		Scanner s = new Scanner(System.in);
-		@SuppressWarnings("unused")
-		int testCase = s.nextInt();
-		arraySize = s.nextInt();
-		originalArray = new int[arraySize];
-		for (int i = 0; i < arraySize; i++) {
-			originalArray[i] = s.nextInt();
+		int T = s.nextInt();
+		for (int t = 0; t < T; t++) {
+			arraySize = s.nextInt();
+			originalArray = new int[arraySize];
+			for (int i = 0; i < arraySize; i++) {
+				originalArray[i] = s.nextInt();
+			}
+			queryNumber = s.nextInt();
+			queryRange = new int[queryNumber * 2];
+			for (int i = 0; i < queryNumber * 2; i++) {
+				queryRange[i] = s.nextInt();
+			}
+			perform();
 		}
-		queryNumber = s.nextInt();
-		queryRange = new int[queryNumber * 2];
-		for (int i = 0; i < queryNumber * 2; i++) {
-			queryRange[i] = s.nextInt();
-		}
-
-		perform();	
 		s.close();
 		long stopTime = System.nanoTime();
 		long elapsedTime = stopTime - startTime;
@@ -66,8 +50,13 @@ class OldColdNumbers {
 			if (countOld >= countCold)
 				System.out.println(0);
 			else {
-				System.out.println("TO DO");
-				// performQuery();
+				int count = 0;
+				while (countOld < countCold) {
+					countOld++;
+					countCold--;
+					count++;
+				}
+				System.out.println(count);
 			}
 
 		}
@@ -94,10 +83,6 @@ class OldColdNumbers {
 				return true;
 
 		return false;
-
-	}
-
-	public static void performQuery() {
 
 	}
 }
